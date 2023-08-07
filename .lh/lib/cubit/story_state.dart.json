@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/cubit/story_state.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1691418648926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1691418648926,
+            "name": "Commit-0",
+            "content": "part of 'story_cubit.dart';\n\n@immutable\nsealed class StoryState {}\n\nfinal class StoryInitial extends StoryState {\n  final String imageUrl;\n\n  StoryInitial(this.imageUrl);\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/cubit/story_cubit.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1691418214698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691420069190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:meta/meta.dart';\n \n part 'story_state.dart';\n \n-class StoryCubit extends Cubit<StoryInitial> {\n-  StoryCubit() : super(StoryInitial('assets/pictures/messi'));\n+class StoryCubit extends Cubit<String> {\n+  StoryCubit() : super('assets/pictures/messi');\n \n-  void changeImage() => emit(StoryInitial('assets/pictures/bron'));\n+  void changeImage() => emit('assets/pictures/bron');\n }\n"
+                },
+                {
+                    "date": 1691420213815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n \n class StoryCubit extends Cubit<String> {\n   StoryCubit() : super('assets/pictures/messi');\n \n-  void changeImage() => emit('assets/pictures/bron');\n+   changeImage() => emit('assets/pictures/bron');\n }\n"
+                }
+            ],
+            "date": 1691418214697,
+            "name": "Commit-0",
+            "content": "import 'package:bloc/bloc.dart';\nimport 'package:meta/meta.dart';\n\npart 'story_state.dart';\n\nclass StoryCubit extends Cubit<StoryInitial> {\n  StoryCubit() : super(StoryInitial('assets/pictures/messi'));\n\n  void changeImage() => emit(StoryInitial('assets/pictures/bron'));\n}\n"
+        }
+    ]
+}

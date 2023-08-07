@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/screens/search.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1691422243759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691422351409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,16 +13,17 @@\n   @override\n   Widget build(BuildContext context) {\n     return Column(\n       children: [\n-        Expanded(\n-          child: ListView.builder(\n-              itemCount: posts.length,\n-              itemBuilder: (context, index) {\n-                final post = posts[index];\n-                return PostWidget(post: post, index: index);\n-              }),\n-        )\n+      SizedBox(height: 500,\n+        child: ListView.builder(\n+                itemCount: posts.length,\n+                itemBuilder: (context, index) {\n+                  final post = posts[index];\n+                  return PostWidget(post: post, index: index);\n+                }),\n+      ),\n+        \n       ],\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1691423247340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   Widget build(BuildContext context) {\n     return Column(\n       children: [\n         SizedBox(\n-          height: 500,\n+          height: 800,\n           child: ListView.builder(\n               itemCount: posts.length,\n               itemBuilder: (context, index) {\n                 final post = posts[index];\n"
+                }
+            ],
+            "date": 1691422243759,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:instagram_clone/models/post.dart';\nimport 'package:instagram_clone/widgets/post.dart';\nclass Search extends StatefulWidget {\n  const Search({ Key? key }) : super(key: key);\n\n  @override\n  _SearchState createState() => _SearchState();\n}\n\nclass _SearchState extends State<Search> {\n  @override\n  Widget build(BuildContext context) {\n    return Column(children: [\n                  Expanded(\n              child: ListView.builder(\n                  itemCount: posts.length,\n                  itemBuilder: (context, index) {\n                    final post = posts[index];\n                    return PostWidget(post: post, index: index);\n                  }),\n            )\n    ],\n      \n    );\n  }\n}"
+        }
+    ]
+}

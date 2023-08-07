@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/cubit/like_button_cubit.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1691449666727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691449735390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,11 @@\n part 'like_button_state.dart';\n \n class LikeButtonCubit extends Cubit<Widget> {\n   LikeButtonCubit() : super(const Icon(Icons.favorite_border, size: 35));\n+\n+  like() => emit(Icon(\n+        Icons.favorite,\n+        color: Colors.red,\n+        size: 35,\n+      ));\n }\n"
+                },
+                {
+                    "date": 1691450548642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n class LikeButtonCubit extends Cubit<Widget> {\n   LikeButtonCubit() : super(const Icon(Icons.favorite_border, size: 35));\n \n-  like() => emit(const Icon(\n+  void handleLikeEvent() => emit(const Icon(\n         Icons.favorite,\n         color: Colors.red,\n         size: 35,\n       ));\n"
+                }
+            ],
+            "date": 1691449666727,
+            "name": "Commit-0",
+            "content": "import 'package:bloc/bloc.dart';\nimport 'package:flutter/material.dart';\nimport 'package:meta/meta.dart';\n\npart 'like_button_state.dart';\n\nclass LikeButtonCubit extends Cubit<Widget> {\n  LikeButtonCubit() : super(Icon(Icons.favorite_border, size: 35));\n}\n"
+        }
+    ]
+}

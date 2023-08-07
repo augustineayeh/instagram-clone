@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/main.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690839577706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690839840579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\n+import 'package:instagram_clone/screens/home.dart';\n \n void main() {\n   runApp(const MyApp());\n }\n@@ -14,56 +15,8 @@\n       theme: ThemeData(\n         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n         useMaterial3: true,\n       ),\n-      home: const MyHomePage(title: 'Flutter Demo Home Page'),\n+      home: Home() \n     );\n   }\n }\n-\n-class MyHomePage extends StatefulWidget {\n-  const MyHomePage({super.key, required this.title});\n-\n-  final String title;\n-\n-  @override\n-  State<MyHomePage> createState() => _MyHomePageState();\n-}\n-\n-class _MyHomePageState extends State<MyHomePage> {\n-  int _counter = 0;\n-\n-  void _incrementCounter() {\n-    setState(() {\n-      _counter++;\n-    });\n-  }\n-\n-  @override\n-  Widget build(BuildContext context) {\n-    return Scaffold(\n-      appBar: AppBar(\n-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,\n-        title: Text(widget.title),\n-      ),\n-      body: Center(\n-        child: Column(\n-          mainAxisAlignment: MainAxisAlignment.center,\n-          children: <Widget>[\n-            const Text(\n-              'You have pushed the button this many times:',\n-            ),\n-            Text(\n-              '$_counter',\n-              style: Theme.of(context).textTheme.headlineMedium,\n-            ),\n-          ],\n-        ),\n-      ),\n-      floatingActionButton: FloatingActionButton(\n-        onPressed: _incrementCounter,\n-        tooltip: 'Increment',\n-        child: const Icon(Icons.add),\n-      ),\n-    );\n-  }\n-}\n"
+                },
+                {
+                    "date": 1690839873140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,9 @@\n         theme: ThemeData(\n           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n           useMaterial3: true,\n         ),\n+        debugShowCheckedModeBanner: false,\n         home: const Home());\n+        \n   }\n }\n"
+                }
+            ],
+            "date": 1690839577706,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(const MyApp());\n}\n\nclass MyApp extends StatelessWidget {\n  const MyApp({super.key});\n\n  \n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Flutter Demo',\n      theme: ThemeData(\n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n        useMaterial3: true,\n      ),\n      home: const MyHomePage(title: 'Flutter Demo Home Page'),\n    );\n  }\n}\n\nclass MyHomePage extends StatefulWidget {\n  const MyHomePage({super.key, required this.title});\n\n  \n  \n  \n\n  \n  \n  \n  \n\n  final String title;\n\n  @override\n  State<MyHomePage> createState() => _MyHomePageState();\n}\n\nclass _MyHomePageState extends State<MyHomePage> {\n  int _counter = 0;\n\n  void _incrementCounter() {\n    setState(() {\n      \n      \n      \n      \n      \n      _counter++;\n    });\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    \n    \n    \n    \n    \n    \n    return Scaffold(\n      appBar: AppBar(\n        \n        \n        \n        backgroundColor: Theme.of(context).colorScheme.inversePrimary,\n        \n        \n        title: Text(widget.title),\n      ),\n      body: Center(\n        \n        \n        child: Column(\n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          mainAxisAlignment: MainAxisAlignment.center,\n          children: <Widget>[\n            const Text(\n              'You have pushed the button this many times:',\n            ),\n            Text(\n              '$_counter',\n              style: Theme.of(context).textTheme.headlineMedium,\n            ),\n          ],\n        ),\n      ),\n      floatingActionButton: FloatingActionButton(\n        onPressed: _incrementCounter,\n        tooltip: 'Increment',\n        child: const Icon(Icons.add),\n      ), \n    );\n  }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "lib/models/post.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1690879763847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690887044120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,24 @@\n // ignore_for_file: public_member_api_docs, sort_constructors_first\n class Post {\n   final String username;\n   final String profilePicUrl;\n+  final String mediaUrl;\n   final String caption;\n   final int numberOfLikes;\n   final int numberOfComments;\n   Post({\n     required this.username,\n     required this.profilePicUrl,\n+    required this.mediaUrl,\n     required this.caption,\n     required this.numberOfLikes,\n     required this.numberOfComments,\n   });\n }\n \n final List<Post> posts = [\n-  Post(\n+  Post(mediaUrl:'assets/pictures/bey.jpeg' ,\n       username: 'leomessi',\n       profilePicUrl: 'assets/pictures/bey.jpeg',\n       caption: 'caption',\n       numberOfLikes: 23432,\n"
+                },
+                {
+                    "date": 1690887093976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,20 @@\n       username: 'leomessi',\n       profilePicUrl: 'assets/pictures/bey.jpeg',\n       caption: 'caption',\n       numberOfLikes: 23432,\n+      numberOfComments: 343),\n+       Post(\n+      mediaUrl: 'assets/pictures/bey.jpeg',\n+      username: 'leomessi',\n+      profilePicUrl: 'assets/pictures/bey.jpeg',\n+      caption: 'caption',\n+      numberOfLikes: 23432,\n+      numberOfComments: 343),\n+       Post(\n+      mediaUrl: 'assets/pictures/bey.jpeg',\n+      username: 'leomessi',\n+      profilePicUrl: 'assets/pictures/bey.jpeg',\n+      caption: 'caption',\n+      numberOfLikes: 23432,\n       numberOfComments: 343)\n ];\n"
+                },
+                {
+                    "date": 1691423714725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,18 +24,25 @@\n       caption: 'caption',\n       numberOfLikes: 23432,\n       numberOfComments: 343),\n   Post(\n-      mediaUrl: 'assets/pictures/bey.jpeg',\n+      mediaUrl: 'assets/pictures/bron.jpeg',\n       username: 'leomessi',\n       profilePicUrl: 'assets/pictures/bey.jpeg',\n       caption: 'caption',\n       numberOfLikes: 23432,\n       numberOfComments: 343),\n   Post(\n-      mediaUrl: 'assets/pictures/bey.jpeg',\n+      mediaUrl: 'assets/pictures/ye.jpeg',\n       username: 'leomessi',\n       profilePicUrl: 'assets/pictures/bey.jpeg',\n       caption: 'caption',\n       numberOfLikes: 23432,\n+      numberOfComments: 343),\n+        Post(\n+      mediaUrl: 'assets/pictures/riri.jpeg',\n+      username: 'leomessi',\n+      profilePicUrl: 'assets/pictures/bey.jpeg',\n+      caption: 'caption',\n+      numberOfLikes: 23432,\n       numberOfComments: 343)\n ];\n"
+                },
+                {
+                    "date": 1691425138849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \n final List<Post> posts = [\n   Post(\n       mediaUrl: 'assets/pictures/bey.jpeg',\n-      username: 'leomessi',\n+      username: 'beyonce',\n       profilePicUrl: 'assets/pictures/bey.jpeg',\n       caption: 'caption',\n       numberOfLikes: 23432,\n       numberOfComments: 343),\n"
+                }
+            ],
+            "date": 1690879763847,
+            "name": "Commit-0",
+            "content": "// ignore_for_file: public_member_api_docs, sort_constructors_first\nclass Post {\n  final String username;\n  final String profilePicUrl;\n  final String caption;\n  final int numberOfLikes;\n  final int numberOfComments;\n  Post({\n    required this.username,\n    required this.profilePicUrl,\n    required this.caption,\n    required this.numberOfLikes,\n    required this.numberOfComments,\n  });\n}\n\nfinal List<Post> posts = [\n  Post(\n      username: 'leomessi',\n      profilePicUrl: 'assets/pictures/bey.jpeg',\n      caption: 'caption',\n      numberOfLikes: 23432,\n      numberOfComments: 343)\n];\n"
+        }
+    ]
+}

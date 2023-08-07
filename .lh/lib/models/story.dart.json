@@ -1,0 +1,74 @@
+{
+    "sourceFile": "lib/models/story.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1690844608252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690877565952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,8 @@\n }\n \n final List<Story> stories = [\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-    Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-      Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-        Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-        \n-  \n- \n-\n-]\n-;\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+];\n"
+                },
+                {
+                    "date": 1690877615241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,9 @@\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690877997347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,13 @@\n   });\n }\n \n final List<Story> stories = [\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'bron'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690878010015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   });\n }\n \n final List<Story> stories = [\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'bron'),\n+  Story(imageUrl: 'assets/pictures/bro.jpeg', username: 'bron'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n"
+                },
+                {
+                    "date": 1690878017085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   });\n }\n \n final List<Story> stories = [\n-  Story(imageUrl: 'assets/pictures/bro.jpeg', username: 'bron'),\n+  Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'bron'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n"
+                },
+                {
+                    "date": 1690878049337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n }\n \n final List<Story> stories = [\n   Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'bron'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomevssi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690878069580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,13 @@\n   });\n }\n \n final List<Story> stories = [\n-  Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'bron'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomevssi'),\n+  Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'bron'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690878162211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   });\n }\n \n final List<Story> stories = [\n-  Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'bron'),\n+  Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n"
+                },
+                {
+                    "date": 1690878187139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n \n final List<Story> stories = [\n   Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n+  Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'kingjames'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690880871716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n final List<Story> stories = [\n   Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'kingjames'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'kanyewest'),\n+  Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690880961849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n final List<Story> stories = [\n   Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'kingjames'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'kanyewest'),\n+  Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'kanyewest'),\n   Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n"
+                },
+                {
+                    "date": 1690880976893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n   });\n }\n \n final List<Story> stories = [\n+  Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'kanyewest'),\n   Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'kingjames'),\n-  Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'kanyewest'),\n   Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n"
+                },
+                {
+                    "date": 1690881486526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,8 @@\n }\n \n final List<Story> stories = [\n   Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'kanyewest'),\n+  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'kingjames'),\n-  Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n-  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n ];\n"
+                },
+                {
+                    "date": 1690881650693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,6 @@\n   Story(imageUrl: 'assets/pictures/ye.jpeg', username: 'kanyewest'),\n   Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n   Story(imageUrl: 'assets/pictures/bey.jpeg', username: 'beyonce'),\n   Story(imageUrl: 'assets/pictures/bron.jpeg', username: 'kingjames'),\n+  Story(imageUrl: 'assets/pictures/riri.jpeg', username: 'badgalriri'),\n ];\n"
+                }
+            ],
+            "date": 1690844608252,
+            "name": "Commit-0",
+            "content": "// ignore_for_file: public_member_api_docs, sort_constructors_first\nclass Story {\n  final String imageUrl;\n  final String username;\n  Story({\n    required this.imageUrl,\n    required this.username,\n  });\n}\n\nfinal List<Story> stories = [\n  Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n    Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n      Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n        Story(imageUrl: 'assets/pictures/messi.jpeg', username: 'leomessi'),\n        \n  \n \n\n]\n;\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/widgets/story.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690843438615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690844664825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n   }) : super(key: key);\n \n   @override\n   Widget build(BuildContext context) {\n-    return CircleAvatar(backgroundImage: AssetImage(imageUrl));\n+    return Container(decoration: BoxDecoration(),);\n   }\n }\n"
+                },
+                {
+                    "date": 1690844759916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n   @override\n   Widget build(BuildContext context) {\n     return Container(\n-      decoration: const BoxDecoration(),\n+      decoration: const BoxDecoration(image: DecorationImage(image: DecorationImage(image: Image.))),\n     );\n   }\n }\n"
+                }
+            ],
+            "date": 1690843438615,
+            "name": "Commit-0",
+            "content": "// ignore_for_file: public_member_api_docs, sort_constructors_first\nimport 'package:flutter/material.dart';\n\nclass StoryWidget extends StatelessWidget {\n  final String imageUrl;\n  const StoryWidget({\n    Key? key,\n    required this.imageUrl,\n  }) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return  CircleAvatar(\n      backgroundImage: AssetImage(imageUrl)\n    );\n  }\n}\n"
+        }
+    ]
+}

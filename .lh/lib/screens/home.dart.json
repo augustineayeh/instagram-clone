@@ -1,0 +1,34 @@
+{
+    "sourceFile": "lib/screens/home.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1690839886055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690839922516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const Home({super.key});\n \n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return const Scaffold();\n   }\n }\n"
+                },
+                {
+                    "date": 1690840508555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n   const Home({super.key});\n \n   @override\n   Widget build(BuildContext context) {\n-    return const Scaffold();\n+    return  Scaffold(\n+      appBar: AppBar(leading: ListTile(),),\n+    );\n   }\n }\n"
+                },
+                {
+                    "date": 1690841959999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n       appBar: AppBar(\n-        leading: const ListTile(),\n+        leading: const ListTile(trailing: Icon(Icons.expand),),\n+        actions: [],\n       ),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1690841989932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,12 @@\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n       appBar: AppBar(\n-        leading: const ListTile(\n-          trailing: Icon(Icons.expand),\n+        leading: SizedBox(width: 250,\n+          child: const ListTile(\n+            trailing: Icon(Icons.expand),\n+          ),\n         ),\n         actions: const [],\n       ),\n     );\n"
+                }
+            ],
+            "date": 1690839886055,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass Home extends StatelessWidget {\n  const Home({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

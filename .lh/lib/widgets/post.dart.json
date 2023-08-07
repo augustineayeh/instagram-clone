@@ -1,0 +1,42 @@
+{
+    "sourceFile": "lib/widgets/post.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1690879603017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690879636598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,23 +18,25 @@\n \n class _PostWidgetState extends State<PostWidget> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Column(Row(\n-      children: [\n-        ListTile(\n-          leading: Container(\n-            margin: EdgeInsets.all(5),\n-            width: 90,\n-            height: 90,\n-            decoration: BoxDecoration(\n-                image: DecorationImage(\n-                    image: AssetImage('assets/pictures/messi.jpeg'),\n-                    fit: BoxFit.cover),\n-                shape: BoxShape.circle,\n-                border: Border.all(color: Colors.red)),\n-          ),\n-        )\n-      ],\n-    ));\n+    return Column(children: [\n+      Row(\n+        children: [\n+          ListTile(\n+            leading: Container(\n+              margin: const EdgeInsets.all(5),\n+              width: 90,\n+              height: 90,\n+              decoration: BoxDecoration(\n+                  image: const DecorationImage(\n+                      image: AssetImage('assets/pictures/messi.jpeg'),\n+                      fit: BoxFit.cover),\n+                  shape: BoxShape.circle,\n+                  border: Border.all(color: Colors.red)),\n+            ),\n+          )\n+        ],\n+      )\n+    ]);\n   }\n }\n"
+                },
+                {
+                    "date": 1690880058824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n               margin: const EdgeInsets.all(5),\n               width: 90,\n               height: 90,\n               decoration: BoxDecoration(\n-                  image: const DecorationImage(\n-                      image: AssetImage('assets/pictures/messi.jpeg'),\n+                  image: DecorationImage(\n+                      image: AssetImage(widget.post.profilePicUrl),\n                       fit: BoxFit.cover),\n                   shape: BoxShape.circle,\n                   border: Border.all(color: Colors.red)),\n             ),\n"
+                },
+                {
+                    "date": 1690884437676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n         children: [\n           ListTile(\n             leading: Container(\n               margin: const EdgeInsets.all(5),\n-              width: 90,\n-              height: 90,\n+              width: 40,\n+              height: 40,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n                       image: AssetImage(widget.post.profilePicUrl),\n                       fit: BoxFit.cover),\n"
+                },
+                {
+                    "date": 1690886558654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,10 @@\n                       fit: BoxFit.cover),\n                   shape: BoxShape.circle,\n                   border: Border.all(color: Colors.red)),\n             ),\n+            title: Text(widget.post.username),\n+            trailing: Image.asset('assets/icons/verified.png', height: 15,),\n           )\n         ],\n       )\n     ]);\n"
+                },
+                {
+                    "date": 1690886864921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n class _PostWidgetState extends State<PostWidget> {\n   @override\n   Widget build(BuildContext context) {\n     return Column(children: [\n-      Row(\n+      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,\n         children: [\n           ListTile(\n             leading: Container(\n               margin: const EdgeInsets.all(5),\n@@ -38,10 +38,12 @@\n             trailing: Image.asset(\n               'assets/icons/verified.png',\n               height: 15,\n             ),\n-          )\n+          ),\n+          IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))\n         ],\n-      )\n+      ),\n+      Container(decoration: BoxDecoration(image: DecorationImage(image: AssetImage(widget.post.mediaUrl))))\n     ]);\n   }\n }\n"
+                },
+                {
+                    "date": 1690886994679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n \n class _PostWidgetState extends State<PostWidget> {\n   @override\n   Widget build(BuildContext context) {\n+    final screenWidth = MediaQuery.of(context).size.width;\n     return Column(children: [\n       Row(\n         mainAxisAlignment: MainAxisAlignment.spaceBetween,\n         children: [\n@@ -43,9 +44,9 @@\n           ),\n           IconButton(onPressed: () {}, icon: const Icon(Icons.more_horiz))\n         ],\n       ),\n-      Container(\n+      Container(height: screenWidth,\n           decoration: BoxDecoration(\n               image: DecorationImage(image: AssetImage(widget.post.mediaUrl))))\n     ]);\n   }\n"
+                }
+            ],
+            "date": 1690879603017,
+            "name": "Commit-0",
+            "content": "// ignore_for_file: public_member_api_docs, sort_constructors_first\nimport 'package:flutter/material.dart';\nimport 'package:instagram_clone/models/post.dart';\n\nclass PostWidget extends StatefulWidget {\n  final Post post;\n\n  final int index;\n  const PostWidget({\n    Key? key,\n    required this.post,\n    required this.index,\n  }) : super(key: key);\n\n  @override\n  State<PostWidget> createState() => _PostWidgetState();\n}\n\nclass _PostWidgetState extends State<PostWidget> {\n  @override\n  Widget build(BuildContext context) {\n    return const Column(Row(\n      children: [\n        ListTile(\n          leading: Container(\n            margin: EdgeInsets.all(5),\n            width: 90,\n            height: 90,\n            decoration: BoxDecoration(\n                image: DecorationImage(\n                    image: AssetImage('assets/pictures/messi.jpeg'),\n                    fit: BoxFit.cover),\n                shape: BoxShape.circle,\n                border: Border.all(color: Colors.red)),\n          ),\n        )\n      ],\n    ));\n  }\n}\n"
+        }
+    ]
+}
