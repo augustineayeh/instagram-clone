@@ -23,7 +23,7 @@ class StoryWidget extends StatelessWidget {
               image: DecorationImage(
                   image: AssetImage(story.imageUrl), fit: BoxFit.cover),
               shape: BoxShape.circle,
-              border: Border.all(color: const Color(0xffBF328E), width: 3)),
+              border: Border.all(color: const Color(0xffBE3870), width: 3)),
         ),
         Text(story.username)
       ],

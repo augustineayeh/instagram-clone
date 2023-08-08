@@ -17,7 +17,9 @@ class PostWidget extends StatefulWidget {
 }
 
 class _PostWidgetState extends State<PostWidget> {
-  bool liked = false;
+  bool isLiked = false;
+  bool isBookmarked = false;
+  String iconUrl = 'assets/icons/bookmark.png';
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +59,7 @@ class _PostWidgetState extends State<PostWidget> {
       InkWell(
         onDoubleTap: () {
           setState(() {
-            liked = !liked;
+            isLiked = !isLiked;
           });
         },
         child: Container(
@@ -79,10 +81,15 @@ class _PostWidgetState extends State<PostWidget> {
                 IconButton(
                     onPressed: () {
                       setState(() {
-                        liked = !liked;
+                        isLiked = !isLiked;
+                        if (isLiked) {
+                          widget.post.likes++;
+                        } else {
+                          widget.post.likes--;
+                        }
                       });
                     },
-                    icon: liked
+                    icon: isLiked
                         ? const Icon(
                             Icons.favorite,
                             color: Colors.red,
@@ -102,9 +109,21 @@ class _PostWidgetState extends State<PostWidget> {
                 )
               ],
             ),
-            Image.asset(
-              'assets/icons/bookmark.png',
-              height: 28,
+            InkWell(
+              onTap: () {
+                setState(() {
+                  isBookmarked = !isBookmarked;
+                  if (isBookmarked) {
+                    iconUrl = 'assets/icons/bookmark.png';
+                  } else {
+                    iconUrl = 'assets/icons/bookmark2.png';
+                  }
+                });
+              },
+              child: Image.asset(
+                iconUrl,
+                height: 28,
+              ),
             )
           ],
         ),
@@ -143,6 +162,30 @@ class _PostWidgetState extends State<PostWidget> {
                           ),
                         ],
                       ),
+                    ),
+                    Text(
+                      'View all ${widget.post.numberOfComments} comments',
+                      style: const TextStyle(color: Colors.grey),
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(5),
+                          width: 35,
+                          height: 35,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    'assets/pictures/userProfilePic.jpg'),
+                                fit: BoxFit.cover),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        const Text(
+                          'Add a comment...',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ],
                     ),
                     const SizedBox(
                       height: 10,
