@@ -2,8 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:instagram_clone/models/models.dart';
 import 'package:instagram_clone/widgets/widgets.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  int _selectedIndex = 0;
+  void _onTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +83,50 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/icons/home.png',
+              height: 33,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/icons/search.png',
+              height: 30,
+            ),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/icons/add.png',
+              height: 30,
+            ),
+            label: 'Post',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/icons/reel.png',
+              height: 28,
+            ),
+            label: 'Reel',
+          ),
+          const BottomNavigationBarItem(
+            icon: CircleAvatar(
+              radius: 15,
+              backgroundImage: AssetImage('assets/pictures/userProfilePic.jpg'),
+            ),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onTapped,
       ),
     );
   }

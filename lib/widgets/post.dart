@@ -163,27 +163,26 @@ class _PostWidgetState extends State<PostWidget> {
                         ],
                       ),
                     ),
-                    Text(
-                      'View all ${widget.post.numberOfComments} comments',
-                      style: const TextStyle(color: Colors.grey),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: Text(
+                        'View all ${widget.post.numberOfComments} comments',
+                        style: const TextStyle(color: Colors.grey),
+                      ),
                     ),
-                    Row(
+                    const Row(
                       children: [
-                        Container(
-                          margin: const EdgeInsets.all(5),
-                          width: 35,
-                          height: 35,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(
-                                    'assets/pictures/userProfilePic.jpg'),
-                                fit: BoxFit.cover),
-                            shape: BoxShape.circle,
-                          ),
+                        CircleAvatar(
+                          radius: 15,
+                          backgroundImage:
+                              AssetImage('assets/pictures/userProfilePic.jpg'),
                         ),
-                        const Text(
-                          'Add a comment...',
-                          style: TextStyle(color: Colors.grey),
+                        Padding(
+                          padding: EdgeInsets.only(left: 8),
+                          child: Text(
+                            'Add a comment...',
+                            style: TextStyle(color: Colors.grey),
+                          ),
                         ),
                       ],
                     ),

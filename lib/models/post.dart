@@ -6,6 +6,8 @@ class Post {
   final String caption;
   int likes;
   final int numberOfComments;
+
+  
   Post({
     required this.username,
     required this.profilePicUrl,
