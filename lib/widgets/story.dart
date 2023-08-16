@@ -16,16 +16,33 @@ class StoryWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: const EdgeInsets.all(5),
           width: 90,
           height: 90,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(story.imageUrl), fit: BoxFit.cover),
-              shape: BoxShape.circle,
-              border: Border.all(color: const Color(0xffBE3870), width: 3)),
+          margin: const EdgeInsets.all(5),
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.fromBorderSide(
+              BorderSide(
+                style: BorderStyle.solid,
+                color: Colors.transparent,
+                width: 3,
+              ),
+            ),
+            gradient: LinearGradient(
+              colors: [Colors.red, Colors.purple, Colors.yellow],
+              stops: [0.0, 0.5, 1.0],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: ClipOval(
+            child: Image.asset(
+              story.imageUrl,
+              fit: BoxFit.cover,
+            ),
+          ),
         ),
-        Text(story.username)
+        Text(story.username),
       ],
     );
   }

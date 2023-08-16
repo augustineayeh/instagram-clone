@@ -7,7 +7,6 @@ class Post {
   int likes;
   final int numberOfComments;
 
-  
   Post({
     required this.username,
     required this.profilePicUrl,
@@ -19,6 +18,13 @@ class Post {
 }
 
 final List<Post> posts = [
+  Post(
+      mediaUrl: 'assets/pictures/riri.jpeg',
+      username: 'badgirlriri',
+      profilePicUrl: 'assets/pictures/riri.jpeg',
+      caption: '#MetGala2022',
+      likes: 48784522,
+      numberOfComments: 2653),
   Post(
       mediaUrl: 'assets/pictures/bey.jpeg',
       username: 'beyonce',
@@ -40,13 +46,6 @@ final List<Post> posts = [
       caption: 'The Life Of Pablo listening event at MSG',
       likes: 3323432,
       numberOfComments: 9842),
-  Post(
-      mediaUrl: 'assets/pictures/riri.jpeg',
-      username: 'badgirlriri',
-      profilePicUrl: 'assets/pictures/riri.jpeg',
-      caption: '#MetGala2022',
-      likes: 48784522,
-      numberOfComments: 2653),
   Post(
       mediaUrl: 'assets/pictures/drake.jpeg',
       username: 'Champagnepapi',

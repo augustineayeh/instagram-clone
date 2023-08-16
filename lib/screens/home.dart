@@ -27,7 +27,6 @@ class _HomeState extends State<Home> {
           slivers: [
             SliverAppBar(
               backgroundColor: Colors.white,
-              // pinned: true,
               actions: [
                 SizedBox(
                   width: screenWidth,
