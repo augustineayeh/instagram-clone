@@ -1,16 +1,16 @@
-# instagram_clone
+# instagram clone
 
-A new Flutter project.
+## Screens
+Home
 
-## Getting Started
+|           |  |
+:-------------:|:-------------:|
+|![](./readme_files/image2.png) | ![](./readme_files/image.png) |
 
-This project is a starting point for a Flutter application.
+|           |  |
+:-------------:|:-------------:|
+|![](./readme_files/image3.png) | ![](./readme_files/image4.png) |
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+|           |  |
+:-------------:|:-------------:|
+|![](./readme_files/image5.png) | ![](./readme_files/image6.png) |
