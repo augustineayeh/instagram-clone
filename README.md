@@ -1,6 +1,6 @@
 # instagram clone
-
-# Screens
+Video demo: https://www.linkedin.com/posts/augustineayeh_instagram-clone-made-with-flutter-https-activity-7097740189153816577-e9-K?utm_source=share&utm_medium=member_desktop
+# Screenshots
 
 ## Home
 
